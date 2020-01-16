@@ -1,0 +1,62 @@
+/*
+Theme Name: Marcel Cabrera Portafolio
+Theme URI: https://www.marcelcabrera.com.mx
+Author: Marcel Cabrera
+Author URI: https://www.marcelcabrera.com.mx
+Description: Theme for Marcel Cabrera Portafolio.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: marcelcabrera
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+// 1. ROOT 					==============================
+
+// Compass
+@import "bourbon";
+
+// CSS reset
+@import "normalize";
+
+// Site wide styles (html, body)
+@import "site";
+
+// Variables and mixins
+@import "variables";
+@import "mixins";
+
+
+// 2. TYPOGRAPHY 			==============================
+@import "fonts";
+
+
+// Block level (h1, p) and text-level (em, strong) type
+@import "typography";
+
+// 3. COLOUR 				==============================
+
+// Colour interaction semantics
+@import "colour";
+
+// 5. ELEMENTS 				==============================
+
+// Figures, images and other elements
+@import "elements";
+
+// Standard form controls
+@import "forms";
+
+// Tables
+@import "tables";
+
+// 6. LAYOUT 			==============================
+@import "plugins";
+
+// Page level layout styles (banner, navigation, content, contentinfo)
+@import "page";
+
+//  7. VENDOR-SPECIFIC 		==============================
+//  9. TEMPLATE SPECIFICS 	==============================
