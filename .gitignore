@@ -8,3 +8,5 @@ wp-content/*
 
 wp-content/themes/*
 !wp-content/themes/marcelcabrera/
+wp-content/themes/marcelcabrera/prepros.cfg
+wp-content/themes/marcelcabrera/prepros-6.config

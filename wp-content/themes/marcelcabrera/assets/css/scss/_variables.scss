@@ -30,9 +30,7 @@ $codefont : Monaco, Courier New, monospace;
 
 // 3. COLOUR 				==============================
 
-$basecolor 		: #01abaa;
-$secondarycolor : #fea680;
-$tertiarycolor  : #fedc3d;
+$basecolor 		: rgb(46,98,210);
 $compcolor 		: adjust-hue($basecolor, 180);
 $bordercolor    : lighten($basecolor, 60%);
 
