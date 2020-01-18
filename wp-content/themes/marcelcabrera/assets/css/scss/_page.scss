@@ -10,3 +10,54 @@
 body{
     font-family: $basefont;
 } //body
+
+.btn, .menu a{
+    background: $white;
+    border: 4px solid $basecolor;
+    border-radius: 25px;
+    color: $basecolor;
+    display: inline-block;
+    font-weight: 700;
+    padding: 0.5em 1em;
+
+    &:hover{
+        background: $basecolor;
+        color: $white;
+    }
+} //.btn
+
+
+/* Header
+===================================================
+===================================================
+===================================================
+===================================================
+===================================================
+===================================================
+===================================================
+*/
+.head{
+    padding: 2em 0;
+    position: relative;
+
+    & > .container{
+        @include breakpoint(junior){
+            position: relative;
+        }
+    }
+} //.head
+
+.logotipo{
+    max-width: 120px;
+} //.logotipo
+
+.main-menu-wrapper{
+    position: absolute;
+    right:15px;
+    top:50%;
+    transform: translateY(-50%);
+} //.main-menu-wrapper
+
+.menu{
+    list-style-type: none;
+} //.menu

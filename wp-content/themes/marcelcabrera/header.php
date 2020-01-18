@@ -40,11 +40,7 @@
 
             <?php endif; ?>
 
-            <nav id="main-menu-wrapper" class="main-menu-wrapper">
-              <a href="#main-menu-wrapper" class="toggle-menu icon-menu"><span class="screen-reader-text"><?php _e('Mostrar Menú','wpboilerplate'); ?></span></a>
-              <a href="#" class="toggle-menu icon-clearclose"><span class="screen-reader-text">Cerrar Menú</span></a>
-
-              <div class="nav-main-menu-container">
+            <nav id="navigation" class="main-menu-wrapper">
                 <?php
                   $args_nav=array(
                     'theme_location'=>'main-menu',
@@ -52,25 +48,6 @@
                   );
                   wp_nav_menu($args_nav);
                 ?>
-
-                <div class="secondary-nav-bar">
-                <div class="container">
-                    <?php echo get_search_form(); ?>
-                    
-                    <?php
-                        $args_sec_nav = array(
-                            'theme_location'=>'secondary-menu',
-                            'container' => 'div',
-                            'menu_class' => 'secondary-menu'        
-                        );
-                        wp_nav_menu($args_sec_nav);
-                    ?>
-                </div>
-                </div>
-                <!-- .secondary-nav-bar -->
-
-
-              </div>
 
             </nav>
             <!-- .main-menu-wrapper -->
@@ -88,5 +65,5 @@
         </div>
         <!-- header-wrapper -->
 
-      <main class="main-content" role="main">
       <?php endif; ?>
+      <main class="main-content" role="main">
