@@ -26,6 +26,10 @@ body{
     }
 } //.btn
 
+.section{
+    padding: 8em 0;
+} //.section
+
 
 /* Header
 ===================================================
@@ -61,3 +65,49 @@ body{
 .menu{
     list-style-type: none;
 } //.menu
+
+/* Hero
+===================================================
+===================================================
+===================================================
+===================================================
+===================================================
+===================================================
+===================================================
+*/
+.hero{
+    text-align: center;
+    box-sizing: border-box;
+
+    p{
+        @include font-size(18);
+
+        @include breakpoint(junior){
+            @include font-size(21);
+        }
+    } //p
+
+    .entry{
+        margin-bottom: 6em;
+
+        @include breakpoint(intern){
+            margin: 0 auto 6em;
+            width: 70%;
+        }
+
+        @include breakpoint(junior){
+            width: 90%;
+        }
+    } //.entry
+
+} //.hero
+
+.profile-img{
+    margin: 0 auto;
+    width: 200px;
+
+    img{
+        border-radius: 50%;
+        height: auto;
+    }
+} //.profile-img

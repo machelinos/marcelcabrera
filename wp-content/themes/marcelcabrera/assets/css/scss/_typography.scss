@@ -17,36 +17,46 @@ color : $lightgrey; }
 h1,
 .h1 {
 margin-bottom : $baselineheight / 2;
-@include font-size(32);
-line-height : 1.2; }
+@include font-size(36);
+line-height : 1.2; 
+    @include breakpoint(junior){
+        @include font-size(48);
+    }
+}
 
 h2,
 .h2 {
-margin-bottom : $baselineheight / 2;
-@include font-size(24);
-line-height : 1.2; }
+margin-bottom : 1.2em;
+@include font-size(32);
+line-height : 1.2; 
+
+@include breakpoint(junior){
+    margin-bottom: 0.75em;
+    @include font-size(42);
+}
+}
 
 h3,
 .h3 {
 margin-bottom : $baselineheight / 1.5;
-@include font-size(21);
+@include font-size(24);
 line-height : 1.3; }
 
 h4,
 .h4 {
 margin-bottom : $baselineheight;
-@include font-size(18);
+@include font-size(21);
 line-height : 1.25; }
 
 h5,
 .h5 {
-@include font-size(16);
+@include font-size(18);
 margin-bottom : $baselineheight; }
 
 h6,
 .h6 {
 margin-bottom : $baselineheight;
-@include font-size(14);
+@include font-size(16);
 font-weight : normal;
 letter-spacing : 1px;
 text-transform : uppercase; }
