@@ -11,6 +11,11 @@ body{
     font-family: $basefont;
 } //body
 
+.bg-base{
+    background: $basecolor;
+    color: $white;
+} //.bg-base
+
 .btn, .menu a{
     background: $white;
     border: 4px solid $basecolor;
@@ -26,9 +31,24 @@ body{
     }
 } //.btn
 
+.entry{
+    p{
+        @include font-size(18);
+    } //p
+
+} //.entry
+
 .section{
     padding: 8em 0;
 } //.section
+
+.section-large{
+    padding: 16em 0;
+} //.section-large
+
+.text-center{
+    text-align: center;
+} //.text-center
 
 
 /* Header
@@ -98,6 +118,13 @@ body{
         @include breakpoint(junior){
             width: 90%;
         }
+
+        p{
+            @include breakpoint(junior){
+                margin: 0 auto;
+                width: 70%;
+            }
+        }
     } //.entry
 
 } //.hero
@@ -111,3 +138,93 @@ body{
         height: auto;
     }
 } //.profile-img
+
+/* Presenting
+===================================================
+===================================================
+===================================================
+===================================================
+===================================================
+===================================================
+===================================================
+*/
+.presenting{
+    .entry{
+        @include breakpoint(intern){
+            margin: 0 auto;
+            width: 70%;
+        }
+
+        p{
+            line-height: 2em;
+        }
+    }
+} //.presenting
+
+/* Skills
+===================================================
+===================================================
+===================================================
+===================================================
+===================================================
+===================================================
+===================================================
+*/
+.skill-content{
+    border-bottom: 1px solid $lightergrey;
+    margin-bottom: 8em;
+    padding-bottom: 8em;
+
+    @include breakpoint(intern){
+        margin: 0 auto 6em;
+        width: 70%;
+    }
+
+    @include breakpoint(junior){
+        border-bottom: none;
+        width: 90%;
+    }
+
+    h2{
+        @include font-size(24);
+
+        @include breakpoint(junior){
+            margin-bottom: 1.5em;
+        }
+    } //h2
+
+    h3{
+        color: $basecolor;
+        @include font-size(18);
+    }
+
+    img{
+        max-height: 48px;
+        width: auto;
+
+        @include breakpoint(junior){
+            margin-bottom: 2em;
+        }
+    } //img
+
+    ul{
+        list-style-type: none;
+    }
+
+    p, li{
+        @include breakpoint(junior){
+            @include font-size(16);
+        }
+    }
+
+} //.skill-content
+
+.skills{
+    .col-md-4{
+        &:last-child{
+            .skill-content{
+                border-bottom: none;
+            }
+        }
+    }
+}

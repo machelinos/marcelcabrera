@@ -792,9 +792,10 @@ ul,
 dl,
 address {
   margin-bottom: 1.5em;
-  font-size: 16px;
-  font-size: 1.6rem;
+  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 1.5em;
+  letter-spacing: 0.1em;
 }
 
 small {
@@ -2337,6 +2338,11 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.bg-base {
+  background: #2e62d2;
+  color: white;
+}
+
 .btn, .menu a {
   background: white;
   border: 4px solid #2e62d2;
@@ -2351,8 +2357,21 @@ body {
   color: white;
 }
 
+.entry p {
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+
 .section {
   padding: 8em 0;
+}
+
+.section-large {
+  padding: 16em 0;
+}
+
+.text-center {
+  text-align: center;
 }
 
 /* Header
@@ -2426,6 +2445,12 @@ body {
     width: 90%;
   }
 }
+@media only screen and (min-width: 992px) {
+  .hero .entry p {
+    margin: 0 auto;
+    width: 70%;
+  }
+}
 
 .profile-img {
   margin: 0 auto;
@@ -2434,4 +2459,86 @@ body {
 .profile-img img {
   border-radius: 50%;
   height: auto;
+}
+
+/* Presenting
+===================================================
+===================================================
+===================================================
+===================================================
+===================================================
+===================================================
+===================================================
+*/
+@media only screen and (min-width: 768px) {
+  .presenting .entry {
+    margin: 0 auto;
+    width: 70%;
+  }
+}
+.presenting .entry p {
+  line-height: 2em;
+}
+
+/* Skills
+===================================================
+===================================================
+===================================================
+===================================================
+===================================================
+===================================================
+===================================================
+*/
+.skill-content {
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 8em;
+  padding-bottom: 8em;
+}
+@media only screen and (min-width: 768px) {
+  .skill-content {
+    margin: 0 auto 6em;
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .skill-content {
+    border-bottom: none;
+    width: 90%;
+  }
+}
+.skill-content h2 {
+  font-size: 24px;
+  font-size: 2.4rem;
+}
+@media only screen and (min-width: 992px) {
+  .skill-content h2 {
+    margin-bottom: 1.5em;
+  }
+}
+.skill-content h3 {
+  color: #2e62d2;
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+.skill-content img {
+  max-height: 48px;
+  width: auto;
+}
+@media only screen and (min-width: 992px) {
+  .skill-content img {
+    margin-bottom: 2em;
+  }
+}
+.skill-content ul {
+  list-style-type: none;
+}
+@media only screen and (min-width: 992px) {
+  .skill-content p, .skill-content li {
+    font-size: 16px;
+    font-size: 1.6rem;
+  }
+}
+
+.skills .col-md-4:last-child .skill-content {
+  border-bottom: none;
 }
