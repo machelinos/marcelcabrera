@@ -182,6 +182,8 @@ body{
 
     @include breakpoint(junior){
         border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
         width: 90%;
     }
 
@@ -228,3 +230,105 @@ body{
         }
     }
 }
+
+/* Projects
+===================================================
+===================================================
+===================================================
+===================================================
+===================================================
+===================================================
+===================================================
+*/
+.projects{
+    .entry{
+        @include breakpoint(intern){
+            margin-bottom: 6em;
+        }
+
+        p{
+          @include breakpoint(intern){
+              margin: 0 auto;
+              width: 70%;
+          }  
+
+        } //p
+
+    } //.entry
+
+} //.projects
+
+.project{
+    border-radius: 10px;
+    margin-bottom: 8em;
+
+    h3{
+        font-weight: 400;
+        margin: 1em auto;
+        @include font-size(21);
+
+        @include breakpoint(intern){
+            width: 60%;    
+        }
+
+        @include breakpoint(junior){
+            width: 80%;
+        }
+
+    } //h3
+
+    img{
+        border-radius: 10px;
+    }
+
+} //.project
+
+.project-content{
+    @include breakpoint(junior){
+        background: darken($basecolor, 20%);
+        color: $white;
+        height: 100%;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        top:0;
+        transition: 0.4s all ease-out;
+        width: 100%;
+    }
+
+    .btn{
+        @include breakpoint(junior){
+            background: transparent;
+            color: $white;
+
+            &:hover{
+                background: $basecolor;
+            }
+
+        }
+
+    } //.btn
+
+    .content-wrapper{
+        @include breakpoint(junior){
+            left:0;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+        }
+    } //.content-wrapper
+     
+} //.project-content
+
+.project-wrapper{
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+
+    &:hover{
+        .project-content{
+            opacity: 1;
+        }
+    }
+} //.project-wrapper

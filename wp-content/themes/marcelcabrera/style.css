@@ -2503,6 +2503,8 @@ body {
 @media only screen and (min-width: 992px) {
   .skill-content {
     border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
     width: 90%;
   }
 }
@@ -2541,4 +2543,90 @@ body {
 
 .skills .col-md-4:last-child .skill-content {
   border-bottom: none;
+}
+
+/* Projects
+===================================================
+===================================================
+===================================================
+===================================================
+===================================================
+===================================================
+===================================================
+*/
+@media only screen and (min-width: 768px) {
+  .projects .entry {
+    margin-bottom: 6em;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .projects .entry p {
+    margin: 0 auto;
+    width: 70%;
+  }
+}
+
+.project {
+  border-radius: 10px;
+  margin-bottom: 8em;
+}
+.project h3 {
+  font-weight: 400;
+  margin: 1em auto;
+  font-size: 21px;
+  font-size: 2.1rem;
+}
+@media only screen and (min-width: 768px) {
+  .project h3 {
+    width: 60%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .project h3 {
+    width: 80%;
+  }
+}
+.project img {
+  border-radius: 10px;
+}
+
+@media only screen and (min-width: 992px) {
+  .project-content {
+    background: #1b3b7f;
+    color: white;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: 0.4s all ease-out;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .project-content .btn {
+    background: transparent;
+    color: white;
+  }
+  .project-content .btn:hover {
+    background: #2e62d2;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .project-content .content-wrapper {
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+  }
+}
+
+.project-wrapper {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.project-wrapper:hover .project-content {
+  opacity: 1;
 }
