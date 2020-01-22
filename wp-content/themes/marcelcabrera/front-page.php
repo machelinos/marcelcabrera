@@ -120,6 +120,48 @@
     <!-- .clients -->
     <?php endif; ?>
 
+
+    <?php if(have_rows('startup_projects')): ?>
+    <section class="section-large startup-projects projects text-center bg-base">
+        <div class="container">
+            <div class="entry rte">
+                <h2>Mis Proyectos Personales</h2>
+                <p>Grandes retos me apasionan y crear mis propios proyectos digitales es uno de ellos, ya sea colaborando en el desarrollo o en todo el proceso desde la planeación hasta el mantenimiento diario.</p>
+            </div>
+            <!-- .entry -->
+
+            <div class="row">
+                <?php $counter=1; while(have_rows('startup_projects')): the_row(); ?>
+                <article class="col-md-4 <?php if($counter!=2): ?> col-md-offset-1<?php else: ?> col-md-offset-2<?php endif; ?> startup-project">
+                    <div class="startup-project-wrapper">
+                        
+                        <?php the_sub_field('startup_project_descripcion'); ?>
+
+                        <p>
+                        <?php if(get_sub_field('startup_project_enlace')): ?>
+                        <a href="<?php the_sub_field('startup_project_enlace'); ?>" class="btn" target="_blank">Ver sitio web</a>
+                        <?php else: ?>
+                        <span class="relaunch"><?php the_sub_field('startup_project_relaunch'); ?></span>
+                        <?php endif; ?>
+                        </p>
+
+                    </div>
+                    <!-- .project-wrapper -->
+                
+                </article>
+                <!-- .project -->
+                <?php $counter++; endwhile; ?>
+            </div>
+            <!-- .row -->
+
+        </div>
+        <!-- .container -->
+    
+    </section>
+    <!-- .projects -->
+    <?php endif; ?>
+
+
 <?php
     endwhile; endif;
     get_footer(); 

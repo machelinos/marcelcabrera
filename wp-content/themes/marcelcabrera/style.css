@@ -2641,7 +2641,13 @@ body {
 ===================================================
 */
 .clients .client {
+  margin-bottom: 10em;
   min-height: 100px;
+}
+@media only screen and (min-width: 992px) {
+  .clients .client {
+    margin-bottom: 0;
+  }
 }
 .clients .client img {
   left: 50%;
@@ -2655,4 +2661,43 @@ body {
 .clients .entry h2 {
   font-size: 28px;
   font-size: 2.8rem;
+}
+
+/* Startup Projects
+===================================================
+===================================================
+===================================================
+===================================================
+===================================================
+===================================================
+===================================================
+*/
+.relaunch {
+  color: rgba(46, 98, 210, 0.5);
+}
+
+.startup-project-wrapper {
+  background: white;
+  border-radius: 10px;
+  color: black;
+  margin-bottom: 8em;
+  padding: 4em;
+}
+@media only screen and (min-width: 768px) {
+  .startup-project-wrapper {
+    margin: 0 auto 8em;
+    width: 60%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .startup-project-wrapper {
+    margin: 0;
+    width: 100%;
+  }
+}
+.startup-project-wrapper img {
+  max-width: 200px;
+  max-height: 70px;
+  height: auto;
+  width: auto;
 }

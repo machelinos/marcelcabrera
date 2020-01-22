@@ -344,7 +344,12 @@ body{
 */
 .clients{
     .client{
+        margin-bottom: 10em;
         min-height: 100px;
+
+        @include breakpoint(junior){
+            margin-bottom: 0;
+        }
 
         img{
             left: 50%;
@@ -364,3 +369,41 @@ body{
     } //.entry
 
 } //.clients
+
+/* Startup Projects
+===================================================
+===================================================
+===================================================
+===================================================
+===================================================
+===================================================
+===================================================
+*/
+.relaunch{
+    color: rgba($basecolor, 0.5);
+} //.relaunch
+
+.startup-project-wrapper{
+    background: $white;
+    border-radius: 10px;
+    color: $black;
+    margin-bottom: 8em;
+    padding: 4em;
+
+    @include breakpoint(intern){
+        margin: 0 auto 8em;
+        width: 60%;
+    }
+
+    @include breakpoint(junior){
+        margin: 0;
+        width: 100%;
+    }
+
+    img{
+        max-width: 200px;
+        max-height: 70px;
+        height: auto;
+        width: auto;
+    } //img
+} //.startup-project-wrapper
