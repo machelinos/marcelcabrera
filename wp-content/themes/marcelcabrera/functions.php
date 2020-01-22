@@ -61,6 +61,7 @@
 
 	function marcelcabrera_theme_supports(){
 		add_theme_support('post-thumbnails');
+		add_image_size('client', 9999, 100);
 	}
 	add_action('after_setup_theme', 'marcelcabrera_theme_supports');
 

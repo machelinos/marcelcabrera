@@ -94,6 +94,32 @@
     <!-- .projects -->
     <?php endif; ?>
 
+    <?php if(have_rows('clients')): ?>
+    <div class="section clients text-center">
+        <div class="container">
+            <div class="entry rte">
+                <h2>Privilegiado de haber colaborado con excelentes empresas</h2>
+            </div>
+            <!-- .entry -->
+
+            <div class="row">
+                <?php while(have_rows('clients')): the_row();
+                    $client_logo = get_sub_field('client_img');
+                ?>
+                <div class="col-sm-6 col-md-3 client">
+                    <img src="<?php echo $client_logo['sizes']['client']; ?>" alt="<?php echo $client_logo['alt']; ?>">
+                </div>
+                <?php endwhile; ?>                
+            </div>
+            <!-- .row -->
+
+        </div>
+        <!-- .container -->
+
+    </div>
+    <!-- .clients -->
+    <?php endif; ?>
+
 <?php
     endwhile; endif;
     get_footer(); 
