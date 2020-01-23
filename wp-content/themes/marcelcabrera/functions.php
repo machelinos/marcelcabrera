@@ -60,6 +60,7 @@
 	add_action('widgets_init','marcelcabrera_widgets_init');
 
 	function marcelcabrera_theme_supports(){
+		add_theme_support('title-tag');
 		add_theme_support('post-thumbnails');
 		add_image_size('client', 9999, 100);
 	}
