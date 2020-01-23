@@ -191,12 +191,13 @@ body{
         @include font-size(24);
 
         @include breakpoint(junior){
-            margin-bottom: 1.5em;
+            margin-bottom: 0.5em;
         }
     } //h2
 
     h3{
         color: $basecolor;
+        font-weight: 500;
         @include font-size(18);
     }
 
@@ -408,6 +409,26 @@ body{
     } //img
 } //.startup-project-wrapper
 
+/* Contact
+===================================================
+===================================================
+===================================================
+===================================================
+===================================================
+===================================================
+===================================================
+*/
+.contact{
+    .entry{
+        @include breakpoint(intern){
+            margin: 0 auto;
+            width: 80%;
+        }
+
+    } //.entry
+
+} //.contact
+
 /* Footer
 ===================================================
 ===================================================
@@ -417,16 +438,21 @@ body{
 ===================================================
 ===================================================
 */
-
-.footer{
-
+.copy{
+    color: $lightgrey;
+    padding: 1em 0;
+    @include font-size(15)
 }
-
+.footer{
+    background: $lightergrey;
+    border-top: 1px solid $lightergrey;
+}
 .social{
     li{
         display: inline-block;
 
         a{
+            background: transparent;
             border-width: 2px;
             border-radius: 50%;
             height: 56px;

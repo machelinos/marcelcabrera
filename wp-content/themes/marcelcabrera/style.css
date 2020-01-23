@@ -2523,7 +2523,7 @@ body {
 ===================================================
 */
 .skill-content {
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid #f2f2f2;
   margin-bottom: 8em;
   padding-bottom: 8em;
 }
@@ -2547,11 +2547,12 @@ body {
 }
 @media only screen and (min-width: 992px) {
   .skill-content h2 {
-    margin-bottom: 1.5em;
+    margin-bottom: 0.5em;
   }
 }
 .skill-content h3 {
   color: #2e62d2;
+  font-weight: 500;
   font-size: 18px;
   font-size: 1.8rem;
 }
@@ -2735,6 +2736,22 @@ body {
   width: auto;
 }
 
+/* Contact
+===================================================
+===================================================
+===================================================
+===================================================
+===================================================
+===================================================
+===================================================
+*/
+@media only screen and (min-width: 768px) {
+  .contact .entry {
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+
 /* Footer
 ===================================================
 ===================================================
@@ -2744,10 +2761,23 @@ body {
 ===================================================
 ===================================================
 */
+.copy {
+  color: #bfbfbf;
+  padding: 1em 0;
+  font-size: 15px;
+  font-size: 1.5rem;
+}
+
+.footer {
+  background: #f2f2f2;
+  border-top: 1px solid #f2f2f2;
+}
+
 .social li {
   display: inline-block;
 }
 .social li a {
+  background: transparent;
   border-width: 2px;
   border-radius: 50%;
   height: 56px;

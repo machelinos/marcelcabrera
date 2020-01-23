@@ -14,7 +14,7 @@
                 <!-- social -->
 
                 <div>
-                    <p class="text-center"><?php _e('Todos los derechos reservados &copy;', 'wpboilerplate'); bloginfo('name'); echo ' '.date('Y'); ?></p>
+                    <p class="text-center copy"><?php _e('Todos los derechos reservados &copy;', 'wpboilerplate'); bloginfo('name'); echo ' '.date('Y'); ?></p>
                 </div>
             
             </div>

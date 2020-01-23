@@ -57,7 +57,7 @@
         <div class="container">
             <div class="entry rte">
                 <h2>Mis Proyectos Recientes</h2>
-                <p>Estos son algunos de mis proyectos de diseño y desarrollo web recientes. ¿Te interesa ver más? <a href="mailto:marcel@marcelcabrera.com.mx">Envíame un correo.</a></p>
+                <p>Estos son algunos de mis proyectos de diseño y desarrollo web recientes. ¿Te interesa ver más? <a href="mailto:hola@marcelcabrera.com.mx">Envíame un correo.</a></p>
             </div>
             <!-- .entry -->
 
@@ -160,6 +160,24 @@
     </section>
     <!-- .projects -->
     <?php endif; ?>
+
+    <?php if(get_field('tt_block_02')): ?>
+    <div class="section-large contact text-center">
+        <div class="container">
+            <div class="entry rte">
+                <?php the_field('tt_block_02'); ?>
+
+                <p><a href="mailto:hola@marcelcabrera.com.mx" class="btn" target="_blank">Platícame de tu proyecto</a></p>
+            </div>
+            <!-- .entry -->
+        </div>
+        <!-- .container -->
+
+    </div>
+    <!-- .contact -->
+    <?php endif; ?>
+
+
 
 
 <?php
