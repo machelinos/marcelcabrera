@@ -95,7 +95,7 @@
     <?php endif; ?>
 
     <?php if(have_rows('clients')): ?>
-    <div class="section clients text-center">
+    <div class="section-large clients text-center">
         <div class="container">
             <div class="entry rte">
                 <h2>Privilegiado de haber colaborado con excelentes empresas</h2>
