@@ -35,7 +35,8 @@ border-top : $tableborderwidth * 2 $tableborderstyle $tableborder; }
 
 tbody tr td,
 tbody tr th {
-@include transition(background-color .25s 0 linear); }
+    transition: background-color .25s 0 linear;
+}
 
 tbody tr:hover td,
 tbody tr:hover th {

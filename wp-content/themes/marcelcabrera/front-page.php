@@ -72,7 +72,13 @@
                         <div class="project-content">
                             <div class="content-wrapper">
                                 <h3><?php the_sub_field('proyecto_descripcion'); ?></h3>
-                                <p><a href="<?php the_sub_field('proyecto_enlace'); ?>" class="btn" target="_blank">Ver sitio web</a></p>
+                                <p>
+                                    <a href="<?php the_sub_field('proyecto_enlace'); ?>" class="btn" target="_blank">Ver sitio web</a>
+                                    <?php if(get_sub_field('proyecto_github')): ?>
+                                        <a href="<?php echo esc_url(the_sub_field('proyecto_github')); ?>" class="btn" target="_blank">Ver Github</a>
+                                        
+                                    <?php endif; ?>
+                                </p>
                             </div>
                             <!-- .content-wrapper -->
 

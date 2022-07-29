@@ -1,0 +1,23 @@
+{
+  "name": "marcelcabrera",
+  "version": "1.0.0",
+  "description": "<!DOCTYPE html> <html> <head>     <meta name=\"viewport\" content=\"width=device-width\" /> \t<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" /> \t<title>WordPress &#8250; Léeme</title> \t<link rel=\"stylesheet\" href=\"wp-admin/css/install.css?ver=20100228\" type=\"text/css\" /> </head> <body> <h1 id=\"logo\"> \t<a href=\"http://wordpress.org/\"><img alt=\"WordPress\" src=\"wp-admin/images/wordpress-logo.png\" /></a> </h1> <p style=\"text-align: center\">Plataforma Semántica de Publicación Personal</p>",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass --include-path node_modules/bourbon/core wp-content/themes/marcelcabrera/assets/css/scss/style.scss wp-content/themes/marcelcabrera/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/machelinos/marcelcabrera.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/machelinos/marcelcabrera/issues"
+  },
+  "homepage": "https://github.com/machelinos/marcelcabrera#readme",
+  "dependencies": {
+    "bourbon": "^7.2.0",
+    "node-sass": "^7.0.1"
+  }
+}
