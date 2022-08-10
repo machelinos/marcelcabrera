@@ -57,7 +57,7 @@
         <div class="container">
             <div class="entry rte">
                 <h2><?php _e('Mis Proyectos Recientes','marcelcabrera')?></h2>
-                <p><?php _e('Estos son algunos de mis proyectos de diseño y desarrollo web recientes. ¿Te interesa ver más?'.'marcelcabrera'); ?> <a href="mailto:marcel@marcelcabrera.com.mx"><?php _e('Envíame un correo.','marcelcabrera'); ?></a></p>
+                <p><?php _e('Estos son algunos de mis proyectos de diseño y desarrollo web recientes. ¿Te interesa ver más?','marcelcabrera'); ?> <a href="mailto:marcel@marcelcabrera.com.mx"><?php _e('Envíame un correo.','marcelcabrera'); ?></a></p>
             </div>
             <!-- .entry -->
 
