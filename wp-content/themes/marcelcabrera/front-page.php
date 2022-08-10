@@ -56,8 +56,8 @@
     <section class="section projects text-center">
         <div class="container">
             <div class="entry rte">
-                <h2>Mis Proyectos Recientes</h2>
-                <p>Estos son algunos de mis proyectos de diseño y desarrollo web recientes. ¿Te interesa ver más? <a href="mailto:marcel@marcelcabrera.com.mx">Envíame un correo.</a></p>
+                <h2><?php _e('Mis Proyectos Recientes','marcelcabrera')?></h2>
+                <p><?php _e('Estos son algunos de mis proyectos de diseño y desarrollo web recientes. ¿Te interesa ver más?'.'marcelcabrera'); ?> <a href="mailto:marcel@marcelcabrera.com.mx"><?php _e('Envíame un correo.','marcelcabrera'); ?></a></p>
             </div>
             <!-- .entry -->
 
@@ -73,9 +73,9 @@
                             <div class="content-wrapper">
                                 <h3><?php the_sub_field('proyecto_descripcion'); ?></h3>
                                 <p>
-                                    <a href="<?php the_sub_field('proyecto_enlace'); ?>" class="btn" target="_blank">Ver sitio web</a>
+                                    <a href="<?php the_sub_field('proyecto_enlace'); ?>" class="btn" target="_blank"><?php _e('Ver sitio web','marcelcabrera'); ?></a>
                                     <?php if(get_sub_field('proyecto_github')): ?>
-                                        <a href="<?php echo esc_url(the_sub_field('proyecto_github')); ?>" class="btn" target="_blank">Ver Github</a>
+                                        <a href="<?php echo esc_url(the_sub_field('proyecto_github')); ?>" class="btn" target="_blank"><?php _e('Ver Github','marcelcabrera'); ?></a>
                                         
                                     <?php endif; ?>
                                 </p>
@@ -104,7 +104,7 @@
     <div class="section-large clients text-center">
         <div class="container">
             <div class="entry rte">
-                <h2>Privilegiado de haber colaborado con excelentes empresas</h2>
+                <h2><?php _e('Privilegiado de haber colaborado con excelentes empresas','marcelcabrera') ?></h2>
             </div>
             <!-- .entry -->
 
@@ -131,8 +131,8 @@
     <section class="section-large startup-projects projects text-center bg-base">
         <div class="container">
             <div class="entry rte">
-                <h2>Mis Proyectos Personales</h2>
-                <p>Grandes retos me apasionan y crear mis propios proyectos digitales es uno de ellos, ya sea colaborando en el desarrollo o en todo el proceso desde la planeación hasta el mantenimiento diario.</p>
+                <h2><?php _e('Mis Proyectos Personales','marcelcabrera') ?></h2>
+                <p><?php _e('Grandes retos me apasionan y crear mis propios proyectos digitales es uno de ellos, ya sea colaborando en el desarrollo o en todo el proceso desde la planeación hasta el mantenimiento diario.','marcelcabrera'); ?></p>
             </div>
             <!-- .entry -->
 
@@ -145,7 +145,7 @@
 
                         <p>
                         <?php if(get_sub_field('startup_project_enlace')): ?>
-                        <a href="<?php the_sub_field('startup_project_enlace'); ?>" class="btn" target="_blank">Ver sitio web</a>
+                        <a href="<?php the_sub_field('startup_project_enlace'); ?>" class="btn" target="_blank"><?php _e('Ver sitio web','marcelcabrera') ?></a>
                         <?php else: ?>
                         <span class="relaunch"><?php the_sub_field('startup_project_relaunch'); ?></span>
                         <?php endif; ?>
@@ -173,7 +173,7 @@
             <div class="entry rte">
                 <?php the_field('tt_block_02'); ?>
 
-                <p><a href="mailto:marcel@marcelcabrera.com.mx" class="btn" target="_blank">Platícame de tu proyecto</a></p>
+                <p><a href="mailto:marcel@marcelcabrera.com.mx" class="btn" target="_blank"><?php _e('Platícame de tu proyecto','marcelcabrera') ?></a></p>
             </div>
             <!-- .entry -->
         </div>

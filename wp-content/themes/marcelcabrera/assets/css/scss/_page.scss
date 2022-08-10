@@ -80,10 +80,44 @@ body{
     right:15px;
     top:50%;
     transform: translateY(-50%);
+
+    @include breakpoint(junior) {
+        text-align: right;
+        width: 50%;
+    }
+
+    .wpml-ls{
+        &-item {
+            a{
+                border: 0;
+                border-radius: 0;
+
+                &:hover{
+                    background: transparent;
+                    color: rgba($basecolor, 0.5);
+                }
+            }
+        }
+
+        &-current-language {
+            a{
+                border-bottom: 2px solid $basecolor;
+            }
+        }
+    
+    }
 } //.main-menu-wrapper
 
 .menu{
     list-style-type: none;
+
+    &-item {
+        margin-bottom: 1rem;
+
+        @include breakpoint(junior){
+            display: inline-block;
+        }
+    }
 } //.menu
 
 /* Hero

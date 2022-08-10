@@ -1845,9 +1845,26 @@ body {
   right: 15px;
   top: 50%;
   transform: translateY(-50%); }
+  @media only screen and (min-width: 992px) {
+    .main-menu-wrapper {
+      text-align: right;
+      width: 50%; } }
+  .main-menu-wrapper .wpml-ls-item a {
+    border: 0;
+    border-radius: 0; }
+    .main-menu-wrapper .wpml-ls-item a:hover {
+      background: transparent;
+      color: rgba(46, 98, 210, 0.5); }
+  .main-menu-wrapper .wpml-ls-current-language a {
+    border-bottom: 2px solid #2e62d2; }
 
 .menu {
   list-style-type: none; }
+  .menu-item {
+    margin-bottom: 1rem; }
+    @media only screen and (min-width: 992px) {
+      .menu-item {
+        display: inline-block; } }
 
 /* Hero
 ===================================================
